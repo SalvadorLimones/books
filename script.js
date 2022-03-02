@@ -64,7 +64,9 @@ books.map((book) => {
 
 function loadEvent() {
   console.log("page has been loaded");
-  document.getElementById("root").insertAdjacentHTML("beforeend", beerHTML);
+  document
+    .querySelector(".bookcard-container")
+    .insertAdjacentHTML("beforeend", beerHTML);
 }
 
 window.addEventListener("load", loadEvent);
