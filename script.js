@@ -52,12 +52,17 @@ const books = [
 ];
 let beerHTML = "";
 
-books.map((book) => {
+books.map((book, i) => {
   beerHTML += `
-    <div>
-      <div>${book.title}</div>
-      <div>${book.sub}</div>
-     <div>${book.text}</div>
+    <div class="bookcard">
+      <p class="book-number">${i + 1}</p>
+      <p class="book-sub">${book.sub}</p>
+      <p class="book-title">${book.title}</p>
+      <p class="book-text">${book.text}</p>
+      <button class="book-button">
+      read more
+      <span class="material-icons"> arrow_forward </span>
+    </button>
     </div>
   `;
 });
