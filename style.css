@@ -49,8 +49,6 @@ select {
 
 body {
   background: #f8f7f3;
-  display: flex;
-  justify-content: center;
 }
 
 .header {
@@ -86,7 +84,8 @@ body {
 
 .bookcard-container {
   max-width: 1280px;
-  margin: 80px 25px 0;
+  margin: 80px auto 0;
+  padding: 0 25px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
